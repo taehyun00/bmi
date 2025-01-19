@@ -33,8 +33,15 @@ app.get(`/result`, (req, res) => {
     }
     let bmiStatus = ""; 
     let plus ="";
-
-    if (bmi >= -10 && bmi <= 10) {
+    if(bmi <= - 20){
+        bmiStatus = "심한 저체중";
+        plus = "많이 찝시다";
+    }
+    if(bmi > -20 && bmi < -10){
+        bmiStatus = "저체중";
+        plus = "조금만 찌워봅시다";
+    }
+    else if (bmi >= -10 && bmi <= 10) {
         bmiStatus = "정상";
         plus = "굿 지금만 유지하세요";
     } else if (bmi > 10 && bmi <= 20) {
