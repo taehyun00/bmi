@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: auto;
+}
+
+p {
+    font-family: 'BagelFatOne-Regular';
+    font-size: 5vw;
+}
+
+@font-face {
+    font-family: 'BagelFatOne-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+input.in {
+    border-width: 0 0 1px;
+    font-family: 'BagelFatOne-Regular';
+}
+
+span {
+    font-family: 'BagelFatOne-Regular';
+}
+
+input.but {
+    border-radius: 20px;
+    border-color: black;
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    font-family: 'BagelFatOne-Regular';
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.3s;
+
+    position: relative;
+    top:3vw;
+}
+
+input.but:hover {
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    font-family: 'BagelFatOne-Regular';
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+h4{
+    font-family: 'BagelFatOne-Regular';
+}
+
+
+hr{
+    color:black;
+    size: 5px;
+}
